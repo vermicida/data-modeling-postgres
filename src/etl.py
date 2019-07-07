@@ -203,11 +203,12 @@ def insert_songplays(df, cursor):
         'location',
         'userAgent',
         'song',
-        'artist'
+        'artist',
+        'length'
     ]
     for i, row in df[columns].iterrows():
         cursor.execute(
-            sql_queries.songplays_table_insert,
+            sql_queries.songplays_table_insert_select,
             row.tolist()
         )
 
