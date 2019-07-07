@@ -140,7 +140,3 @@ dmypy.json
 .history
 
 # End of https://www.gitignore.io/api/python,visualstudiocode
-
-# Custom
-src/data/log_data/*
-src/data/song_data/*
